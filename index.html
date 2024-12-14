@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming events</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #logo {
+            position: absolute;
+            top: 40px;
+            right: 160px;
+            width: 100px; /* Adjust the size as needed */
+        }
+            #data-table th, #data-table td {
+                padding: 10px; /* Add padding to all table headers and data cells */
+                font-size: 22px; /* Adjust font size to make it bigger */
+            }
+
+            .status-todo {
+            background-color: blue;
+            color: white;
+        }
+        .status-in-progress {
+            background-color: rgb(243, 158, 1);
+            color: black;
+        }
+        .status-completed {
+            background-color: green;
+            color: white;
+        }
+        .status-cancelled {
+            background-color: darkred;
+            color: white;
+        }
+        .status-requested {
+            background-color: rgb(8, 205, 212);
+            color: black;
+        }
+        #data-table th, #data-table td {
+            padding: 10px;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Upcoming events for the Broadcast team</h1>
+    <img src="logo.png" id="logo" alt="Logo">
+    <table id="data-table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Project</th>
+                <th>Lead</th>
+                <th>Location</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody id="data-container"></tbody>
+    </table>
+    <script src="app.js"></script>
+</body>
+</html>
+
